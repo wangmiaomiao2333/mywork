@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>有道词典</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+</head>	
+<body>
+<div class="wrapper">
+	<div class="header">
+		<i class="iconfont search">&#xe62f;</i>
+		<input type="text" class="input" placeholder="在此输入要翻译的文本">	
+		<i class="iconfont camera">&#xe64b;</i>	
+	</div>
+	<div class="main">
+		<div class="myscroll">
+			<div class="nav">
+				<div class="navscroll">
+					<span>推荐</span>
+					<span class="on">有声美文</span>
+					<span>动听音乐</span>
+					<span>双语阅读</span>
+					<span>英语学习</span>
+					<span>每日一句</span>
+					<span>看电影学英文</span>
+					<span>听歌学英语</span>
+				</div>
+			<i class="iconfont navpos">&#xe637;</i>
+			</div>
+			<div class="dls">
+			<dl>
+				<dd>
+					<p><b>[每日一句]走,约饭去!</b></p>
+					<p><span>英语功夫</span><span>34赞</span></p>
+				</dd>
+				<dt>
+					<img src="img/dt1.jpg" alt="">
+				</dt>
+			</dl>
+			<dl>
+				<dd>
+					<p><b>中国对老外的最大误解</b></p>
+					<p><span class="ddpos">圈子</span><span>187赞</span></p>
+				</dd>
+				<dt>
+					<img src="img/dt2.jpg" alt="">
+				</dt>
+			</dl>
+			<dl>
+				<dd>
+					<p><b>看电影学英文:以你为傲</b></p>
+					<p><span class="ddpos">圈子</span><span>66赞</span></p>
+				</dd>
+				<dt>
+					<img src="img/dt3.jpg" alt="">
+				</dt>
+			</dl>
+			<dl>
+				<dd>
+					<p><b>[每日一句]走,约饭去!</b></p>
+					<p><span class="ddpos">圈子</span><span>233赞</span></p>
+				</dd>
+				<dt>
+					<img src="img/dt4.jpg" alt="">
+				</dt>
+			</dl>
+			<dl>
+				<dd>
+					<p><b>中国对老外的最大误解</b></p>
+					<p><span class="ddpos">圈子</span><span>80赞</span></p>
+				</dd>
+				<dt>
+					<img src="img/dt3.jpg" alt="">
+				</dt>
+			</dl>
+			<dl>
+				<dd>
+					<p><b>中国对老外的最大误解</b></p>
+					<p><span class="ddpos">圈子</span><span>104赞</span></p>
+				</dd>
+				<dt>
+					<img src="img/dt4.jpg" alt="">
+				</dt>
+			</dl>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<span class="on"><i class="iconfont">&#xe64e;</i><b>词典</b></span>
+		<span><i class="iconfont">&#xe639;</i><b>翻译</b></span>
+		<span><i class="iconfont">&#xe633;</i><b>精品课</b></span>
+		<span><i class="iconfont">&#xe650;</i><b>发现</b></span>
+		<span><i class="iconfont">&#xe62e;</i><b>我的</b></span>
+	</div>
+	<div class="circle">
+		<i class="iconfont">&#xe62f;</i>
+	</div>
+</div>
+<script src="js/iscroll5.js"></script>
+<script src="js/swiper-3.3.1.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+	document.documentElement.style.fontSize=window.innerWidth/375*100+"px";	
+	var myscroll=new IScroll(".main");
+	var navscroll=new IScroll(".nav",{
+		scrollX:true
+	});
+	$(".navscroll").on("click","span",function(){
+		$(this).addClass("on").siblings().removeClass();
+	})
+	$(".footer").on("click","span",function(){
+		$(this).addClass("on").siblings().removeClass();
+	})
+</script>	
+</body>
+</html>
